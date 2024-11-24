@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html5 Dersi</title>
+    <!-- * Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bs Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- * Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/udemig-logo.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- * Semantik Etiketler  -->
+    <!-- Html5 ile gelen semnatik etiketler bizim sayfa içerisinde her yere div vermememizin önüne geçerek daha yönetilebilir proje deneyim elde etmemize olanak tanır.  -->
+    <header>
+      <div class="logo">
+        <h1>Udemig Akademi</h1>
+      </div>
+      <nav>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+        <li><a href="#">Hizmetler</a></li>
+      </nav>
+    </header>
+    <!-- Frontend -->
+    <section class="frontend">
+      <div class="info">
+        <h1>Frontend Kursu</h1>
+      </div>
+      <div>
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+    </section>
+    <!-- Backend -->
+    <section class="backend">
+      <div class="info">
+        <h1>Backend Kursu</h1>
+      </div>
+      <div>
+        <img src="https://picsum.photos/201" alt="" />
+      </div>
+    </section>
+    <!-- React Native -->
+    <section class="react-native">
+      <div class="info">
+        <h1>React Native Kursu</h1>
+      </div>
+      <div>
+        <img src="https://picsum.photos/202" alt="" />
+      </div>
+    </section>
+    <!-- Video -->
+    <section class="udemig">
+      <video
+        width="500px"
+        height="500px"
+        src="./assets/udemig.mp4"
+        controls
+        autoplay
+        loop
+        muted
+        poster="./assets/udemig-logo.jpeg"
+      ></video>
+    </section>
+    <!-- Html5 de video etiketi sayesinde projemize videolar ekleyebiliyoruz.
+     
+    Bu etiket sahip olduğu bazı attributeler sayesinde kullanıcı deneyimini arttırır.
+    
+   controls ==> Videoyu yönetmek için kullanıcıya bazı özellikler sunar.[Durdur-oynat,ses ayarlama,ileri-geri sarma,tam ekran]
+
+
+   autoplay ==> Videonun otomatik oynatılmasını sağlar.
+
+   loop ==> Videonun sonuna gelince otomatik olarak baştan başlatma özelliği sunar.
+
+   muted ==> Videoyu başlangıçta sessiz olarak başlatır.
+
+   poster==> Video başlatılmadan önce  bir resim gösterir.
+
+   width/height ==> Videonun genişlik-yükseklik ayaralamasını yapar.
+    -->
+
+    <!-- Audio -->
+    <section class="music">
+      <audio
+        src="./assets/Imagine Dragons - Eyes Closed (Official Music Video).mp3"
+        controls
+        autoplay
+        muted
+        loop
+      ></audio>
+    </section>
+    <!-- Table -->
+    <section class="table-sec">
+      <table border="1">
+        <thead>
+          <tr>
+            <td>No</td>
+            <td>Ad</td>
+            <td>Soyad</td>
+            <td>1.Sınav Notu</td>
+            <td>2.Sınav Notu</td>
+            <td>1.Sözlü Notu</td>
+            <td>2.Sözlü Notu</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1098</td>
+            <td>Enes</td>
+            <td>Özkan</td>
+            <td>95</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Sınıfı geçti</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <!-- Form -->
+    <section class="form-sec">
+      <form>
+        <label for="form-input">Name</label>
+        <input
+          id="form-input"
+          min="1"
+          type="number"
+          placeholder="isim giriniz"
+        />
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-box">
+        <h3>Udemig Akademi</h3>
+        <ul>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Misyonumzu</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Kurslarımız</h3>
+        <ul>
+          <li><a href="#">Frontend</a></li>
+          <li><a href="#">Backend</a></li>
+          <li><a href="#">React Native</a></li>
+          <li><a href="#">İngilizce</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>İletişim</h3>
+        <div class="share">
+          <li><i class="bi bi-facebook"></i></li>
+          <li><i class="bi bi-twitter-x"></i></li>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-github"></i></li>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

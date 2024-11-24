@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+:root {
+  --mainColor: #b59f78;
+  --h1-font: 50px;
+}
+
+.wrapper,
+.wrapper-1,
+.wrapper-2,
+.wrapper-3,
+.wrapper-4,
+.wrapper-5 {
+  width: 500px;
+  height: 100px;
+  margin: 20px;
+}
+.wrapper {
+  background-color: rebeccapurple;
+}
+
+.wrapper-1 {
+  background: linear-gradient(to right, red, tomato, blue, purple);
+  /*  linear-gradient ===> İlgili elemanın arka planında doğrusal renk geçişi elde etmek için kullanılır. */
+}
+
+.wrapper-2 {
+  background: linear-gradient(to right, #4335a7, #605ea1, #47663b, #f96e2a);
+}
+.wrapper-3 {
+  background: radial-gradient(red, yellow, green, purple);
+  /*  radial-gradient ===> İlgili elemanın arka planında dairesel renk geçişi elde etmek için kullanılır. */
+}
+.wrapper-4 {
+  background: radial-gradient(tomato 50%, gray 20%, purple 20%);
+}
+.wrapper-5 {
+  width: 100%;
+  background: repeating-radial-gradient(yellow, green 10%, blue 20%);
+}
+
+.title-shadow {
+  text-shadow: 10px 10px 20px #1f4529;
+}
+
+.title-shadow-1 {
+  text-shadow: 1px 1px 2px red, 0 0 20px green, 0 0 50px darkblue;
+  /* text-shadow ==> İlgili elemana yazı gölgesi eklemek için kullanılır. */
+}
+.box-shadow-example {
+  background-color: var(--mainColor);
+  padding: 10px;
+  width: 300px;
+  height: 100px;
+  margin: 20px 30px;
+  box-shadow: 10px 10px 5px lightblue;
+  font-size: var(--h1-font);
+  font-family: "Oswald", sans-serif;
+  /* box-shadow ==> İlgili elemanın arka planına gölge eklemek için kullanılır. */
+}
+
+@media (max-width: 1000px) {
+  .box-shadow-example {
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.circle,
+.circle-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 40px 50px;
+}
+
+.circle {
+  background-color: #f96e2a;
+  animation: bounce 1s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-1 {
+  border-radius: unset;
+  background-color: red;
+  animation: rotate 1s infinite;
+}
+
+/* Todo: Bir animasyon tanımlayın bunu bir Html elemanına aktarınız */
+
+.grid-contaier {
+  background-color: #1f4529;
+  padding: 10px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* Display:grid dedikten sonra ilgili sütunları veya satıları yönetebiliriz. */
+  column-gap: 20px;
+  /* Sütunlar arasında boşluk bırakmak için kullanılır */
+  row-gap: 20px;
+  /* Satırlar arasında boşluk bırakmak için kullanılır */
+  grid-template-rows: 100px 200px 300px 350px 400px;
+}
+.col-1 {
+  background: #f96e2a;
+  text-align: center;
+}
+
+.col-2 {
+  background-color: red;
+  text-align: center;
+}
+.col-3 {
+  background: #605ea1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .grid-contaier {
+    grid-template-columns: 1fr;
+  }
+}
