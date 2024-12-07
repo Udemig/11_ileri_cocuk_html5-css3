@@ -1,0 +1,208 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Css Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fb4500;
+  color: white;
+  gap: 10px;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.search-area {
+  width: 382px;
+  height: 32px;
+}
+.search-area input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 350px;
+  height: 32px;
+  border-radius: 10px;
+}
+.search-area i {
+  padding: 4px;
+  color: orangered;
+  margin-left: -32px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar li {
+  border-right: 1px solid white;
+  padding: 0 10px;
+}
+.navbar li:last-child {
+  border: none;
+}
+.navbar li a {
+  color: white;
+}
+
+.navbar li a i {
+  font-size: 24px;
+}
+
+.basket-icon {
+  position: relative !important;
+}
+.count {
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* Header Bottom */
+
+.header-bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-bottom: 1px solid gainsboro;
+  height: 40px;
+}
+.header-bottom li {
+  padding: 3px;
+  margin: 5px 0;
+}
+.header-bottom li a {
+  color: gray;
+  font-weight: bold;
+  font-size: 14px;
+}
+.header-bottom li:hover {
+  border-bottom: 2px solid orangered;
+}
+.header-bottom li:hover a {
+  color: orangered;
+}
+
+/* Products */
+
+.products {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.product {
+  height: auto;
+  width: 350px;
+  overflow: hidden;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.product:hover {
+  box-shadow: 0 0 5px gainsboro;
+}
+
+.product-image-wrapper {
+  height: 350px;
+  width: 350px;
+}
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-banner {
+  background-image: linear-gradient(to right, orangered, gold);
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+.product-content {
+  padding: 15px;
+}
+.product-title {
+  color: gray;
+}
+.product-title span {
+  color: black;
+  font-weight: bold;
+}
+.product-stars {
+  color: gold;
+}
+.product-price {
+  color: orangered;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  text-align: center;
+  border: 1px solid orangered;
+  padding: 10px;
+  border-radius: 5px;
+  color: orangered;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.add-to-cart:hover {
+  background-color: orangered;
+  color: white;
+}
+/* Responsive Tasarım */
+
+@media (max-width: 1100px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .search-area {
+    width: 270px;
+    display: block;
+  }
+  .search-area input {
+    width: 100%;
+  }
+  .header-bottom {
+    height: 80px;
+  }
+}
